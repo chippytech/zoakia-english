@@ -1,76 +1,76 @@
 <!doctype html>
 <html lang="el">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ποντιακά Ζώα</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="app-shell">
-      <header class="topbar">
-        <div>
-          <p class="eyebrow">Παιχνίδι λέξεων</p>
-          <h1>Ποντιακά Ζώα</h1>
-        </div>
-        <div class="score-pill" aria-live="polite">
-          <span>Σκορ</span>
-          <strong id="score">0</strong>
-        </div>
-      </header>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pontian Animals</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar">
+<div>
+<p class="eyebrow">Wordplay</p>
+<h1>Pontian Animals</h1>
+</div>
+<div class="score-pill" aria-live="polite">
+<span>Score</span>
+<strong id="score">0</strong>
+</div>
+</header>
 
-      <nav class="mode-tabs" aria-label="Λειτουργίες">
-        <button class="tab-button is-active" type="button" data-mode="play">Παίζω</button>
-        <button class="tab-button" type="button" data-mode="learn">Μαθαίνω</button>
-        <button class="tab-button" type="button" data-mode="collection">Συλλογή</button>
-      </nav>
+<nav class="mode-tabs" aria-label="Functions">
+<button class="tab-button is-active" type="button" data-mode="play">Play</button>
+<button class="tab-button" type="button" data-mode="learn">Learn</button>
+<button class="tab-button" type="button" data-mode="collection">Collection</button>
+</nav>
 
-      <main>
-        <section class="view is-active" id="play-view" aria-labelledby="play-title">
-          <div class="play-layout">
-            <section class="challenge-panel">
-              <div class="round-meta">
-                <span id="category-label">Αυλή</span>
-                <span id="streak-label">Σερί 0</span>
-              </div>
-              <h2 id="play-title">Βρες το ζώο</h2>
-              <button id="sound-button" class="sound-button" type="button" aria-label="Άκουσε τη λέξη">
-                <span aria-hidden="true">▶</span>
-              </button>
-              <p class="target-word" id="target-word">Η κοσσάρα</p>
-              <p class="target-translation" id="target-translation">κότα</p>
-              <p class="feedback" id="feedback" aria-live="polite"></p>
-            </section>
+<main>
+<section class="view is-active" id="play-view" aria-labelledby="play-title">
+<div class="play-layout">
+<section class="challenge-panel">
+<div class="round-meta">
+<span id="category-label">Yard</span>
+<span id="streak-label">Series 0</span>
+</div>
+<h2 id="play-title">Find the animal</h2>
+<button id="sound-button" class="sound-button" type="button" aria-label="Listen to the word">
+<span aria-hidden="true">▶</span>
+</button>
+<p class="target-word" id="target-word">The cowherd</p>
+<p class="target-translation" id="target-translation">chicken</p>
+<p class="feedback" id="feedback" aria-live="polite"></p>
+</section>
 
-            <section class="choices-grid" id="choices" aria-label="Επιλογές ζώων"></section>
-          </div>
-        </section>
+<section class="choices-grid" id="choices" aria-label="Animal choices"></section>
+</div>
+</section>
 
-        <section class="view" id="learn-view" aria-labelledby="learn-title">
-          <div class="learn-toolbar">
-            <h2 id="learn-title">Μαθαίνω τις λέξεις</h2>
-            <label class="search-field">
-              <span>Αναζήτηση</span>
-              <input id="search-input" type="search" autocomplete="off" />
-            </label>
-          </div>
-          <div class="category-strip" id="category-strip" aria-label="Κατηγορίες"></div>
-          <section class="animal-grid" id="animal-grid" aria-label="Κάρτες ζώων"></section>
-        </section>
+<section class="view" id="learn-view" aria-labelledby="learn-title">
+<div class="learn-toolbar">
+<h2 id="learn-title">Learning words</h2>
+<label class="search-field">
+<span>Search</span>
+<input id="search-input" type="search" autocomplete="off" />
+</label>
+</div>
+<div class="category-strip" id="category-strip" aria-label="Categories"></div>
+<section class="animal-grid" id="animal-grid" aria-label="Animal cards"></section>
+</section>
 
-        <section class="view" id="collection-view" aria-labelledby="collection-title">
-          <div class="collection-head">
-            <h2 id="collection-title">Η συλλογή μου</h2>
-            <p id="collection-count">0 από 52</p>
-          </div>
-          <div class="progress-track" aria-hidden="true">
-            <div id="progress-bar"></div>
-          </div>
-          <section class="animal-grid compact" id="collection-grid" aria-label="Συλλογή ζώων"></section>
-        </section>
-      </main>
-    </div>
+<section class="view" id="collection-view" aria-labelledby="collection-title"> 
+<div class="collection-head"> 
+<h2 id="collection-title">My Collection</h2> 
+<p id="collection-count">0 of 52</p> 
+</div> 
+<div class="progress-track" aria-hidden="true"> 
+<div id="progress-bar"></div> 
+</div> 
+<section class="animal-grid compact" id="collection-grid" aria-label="Animal Collection"></section> 
+</section> 
+</main> 
+</div> 
 
-    <script src="./app.js"></script>
-  </body>
+<script src="./app.js"></script> 
+</body>
 </html>
