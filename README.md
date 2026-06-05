@@ -1,15 +1,15 @@
-# Ποντιακά Ζώα
+# Pontic Animals
 
-Μικρό στατικό web app για εκμάθηση ποντιακών λέξεων ζώων με εικόνες, κατηγορίες, παιχνίδι επιλογής, σκορ και συλλογή προόδου.
+Small static web app for learning Pontic animal words with images, categories, a choice game, score, and progress collection.
 
-## Άνοιγμα
+## Open
 
-Ανοίξτε το `index.html` απευθείας στον browser ή σερβίρετε τον φάκελο με οποιονδήποτε static server.
+Open `index.html` directly in the browser or serve the folder with any static server.
 
-## Περιεχόμενα
+## Contents
 
-- `index.html`: δομή της εφαρμογής
-- `style.css`: responsive εμφάνιση
-- `app.js`: δεδομένα ζώων και λογική παιχνιδιού
-- `assets/animals`: 52 εικόνες ζώων
-- `assets/audio`: διαθέσιμα ηχητικά
+- `index.html`: structure of the application
+- `style.css`: responsive appearance
+- `app.js`: animal data and game logic
+- `assets/animals`: 52 animal images
+- `assets/audio`: available audios
